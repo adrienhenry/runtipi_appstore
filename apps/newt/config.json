@@ -1,0 +1,37 @@
+{
+  "name": "Pangolin Newt",
+  "id": "newt",
+  "available": true,
+  "short_desc": "Newt tunnel client for Pangolin.",
+  "author": "fosrl",
+  "categories": ["network"],
+  "description": "Newt is a userspace WireGuard tunnel client and TCP/UDP proxy that connects this host to Pangolin.",
+  "version": "1.0.0",
+  "tipi_version": 3,
+  "min_tipi_version": "4.0.0",
+  "dynamic_config": true,
+  "no_gui": true,
+  "exposable": false,
+  "port": 59999,
+  "supported_architectures": ["amd64", "arm64"],
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "Pangolin endpoint (include https://)",
+      "required": true,
+      "env_variable": "PANGOLIN_ENDPOINT"
+    },
+    {
+      "type": "text",
+      "label": "Newt ID",
+      "required": true,
+      "env_variable": "NEWT_ID"
+    },
+    {
+      "type": "password",
+      "label": "Newt Secret",
+      "required": true,
+      "env_variable": "NEWT_SECRET"
+    }
+  ]
+}
