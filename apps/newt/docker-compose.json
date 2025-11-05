@@ -4,11 +4,11 @@
     {
       "name": "newt",
       "image": "fosrl/newt",
-      "environment": [
-        { "key": "PANGOLIN_ENDPOINT", "value": "${PANGOLIN_ENDPOINT}" },
-        { "key": "NEWT_ID", "value": "${NEWT_ID}" },
-        { "key": "NEWT_SECRET", "value": "${NEWT_SECRET}" }
-      ]
+      "environment": {
+        "PANGOLIN_ENDPOINT": "${PANGOLIN_ENDPOINT}",
+        "NEWT_ID": "${NEWT_ID}",
+        "NEWT_SECRET": "${NEWT_SECRET}"
+      }
     }
   ]
 }

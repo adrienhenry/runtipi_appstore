@@ -4,6 +4,7 @@
   "available": true,
   "short_desc": "Newt tunnel client for Pangolin.",
   "author": "fosrl",
+  "source": "https://github.com/your-repo/newt", 
   "categories": ["network"],
   "description": "Newt is a userspace WireGuard tunnel client and TCP/UDP proxy that connects this host to Pangolin.",
   "version": "1.0.0",
